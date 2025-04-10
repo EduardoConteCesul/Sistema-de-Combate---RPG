@@ -1,4 +1,7 @@
-public abstract class Personagem {
+package Classes;
+
+public abstract class Personagem{
+
     private String nome;
     private int hp;
     private int hpMax;
