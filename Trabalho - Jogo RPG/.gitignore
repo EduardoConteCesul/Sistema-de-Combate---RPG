@@ -26,7 +26,8 @@ bin/
 .vscode/
 
 ### Mac OS ###
-.DS_Store
+.DS_Storegit
 
 .idea/
 
+.DS_Store
