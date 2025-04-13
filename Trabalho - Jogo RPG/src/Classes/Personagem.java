@@ -15,25 +15,29 @@ public abstract class Personagem{
     }
 
     public void atacar(Personagem alvo) {
-
+        hp -= getPoderAtaque();
     }
 
     public void receberDano(int quantidade){
-
+        if (hp - quantidade < 0){
+            hp = 0;
+            return;
+        }
+        hp -= quantidade;
     }
 
     public void receberDano(int quantidade, boolean critico){
-
+        if (critico){
+            receberDano(quantidade * 2);
+        }
     }
 
-    public void receberCura(int quantidade){
-
-    }
+    public void receberCura(int quantidade){}
 
     public abstract void exibirStatus();
 
-
     protected abstract int getPoderAtaque();
+
 
     public String getNome() {
         return nome;

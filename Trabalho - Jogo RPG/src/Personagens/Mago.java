@@ -50,7 +50,8 @@ public class Mago extends Personagem implements Especial {
         System.out.println(
                 "Nome: " + getNome() +
                         " | HP: " + getHp() +
-                        " | Defesa: " + getDefesaBase() +
+                        " | HpMax: " + getHpMax() +
+                        " | Defesa Base: " + getDefesaBase() +
                         " | Poder Mágico: " + poderMagico +
                         " | Mana: " + mana
         );
