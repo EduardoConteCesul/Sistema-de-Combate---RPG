@@ -23,8 +23,8 @@ public class Guerreiro extends Personagem implements Especial {
     }
 
     @Override
-    public int usarHabilidadeEspecial(Personagem alvo) {
-        return espadaMortal();
+    public void usarHabilidadeEspecial(Personagem alvo) {
+        alvo.receberDano(espadaMortal());
     }
 
     public int gritoDeGuerra() {
