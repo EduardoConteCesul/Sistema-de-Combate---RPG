@@ -32,5 +32,38 @@ public abstract class Personagem{
 
     public abstract void exibirStatus();
 
+
     protected abstract int getPoderAtaque();
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    public int getHpMax() {
+        return hpMax;
+    }
+
+    public void setHpMax(int hpMax) {
+        this.hpMax = hpMax;
+    }
+
+    public int getDefesaBase() {
+        return defesaBase;
+    }
+
+    public void setDefesaBase(int defesaBase) {
+        this.defesaBase = defesaBase;
+    }
 }
