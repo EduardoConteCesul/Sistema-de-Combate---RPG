@@ -1,7 +1,5 @@
 package Classes;
 
-import com.sun.management.UnixOperatingSystemMXBean;
-
 public abstract class Personagem{
 
     private String nome;
