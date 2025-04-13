@@ -1,5 +1,6 @@
-package Classes;
+package Personagens;
 
+import Classes.Personagem;
 import Interfaces.Especial;
 
 public class Mago extends Personagem implements Especial {
