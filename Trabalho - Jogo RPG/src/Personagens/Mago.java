@@ -19,13 +19,40 @@ public class Mago extends Personagem implements Especial {
         return poderMagico / 2;
     }
 
-    @Override
-    public void exibirStatus() {
-
-    }
 
     @Override
     public void usarHabilidadeEspecial(Personagem alvo) {
+        alvo.receberDano(bolaFogo());
+    }
 
+    private int bolaFogo(){
+        if (mana >= 30){
+            mana =- 30;
+            return 3 * poderMagico;
+        }else {
+            System.out.println("Mana insuficiente!");
+            return 0;
+        }
+    }
+
+    public void raioCongelante(Personagem alvo){
+        if (mana < 20){
+            System.out.println("Mana insuficiente!");
+            return;
+        }
+        mana =- 20;
+        alvo.receberDano(12);
+        System.out.println("Efeito congelamento acionado");
+    }
+
+    @Override
+    public void exibirStatus() {
+        System.out.println(
+                "Nome: " + getNome() +
+                        " | HP: " + getHp() +
+                        " | Defesa: " + getDefesaBase() +
+                        " | Poder Mágico: " + poderMagico +
+                        " | Mana: " + mana
+        );
     }
 }

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64304934-0f10-4b07-8109-0290b5bd1e3d" name="Changes" comment="" />
+    <list default="true" id="64304934-0f10-4b07-8109-0290b5bd1e3d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classes/Personagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Personagem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personagens/Guerreiro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personagens/Mago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personagens/Mago.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +43,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Eduardo",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/aluno/Desktop/Sistema-de-Combate---RPG/Trabalho - Jogo RPG",
     "node.js.detected.package.eslint": "true",
