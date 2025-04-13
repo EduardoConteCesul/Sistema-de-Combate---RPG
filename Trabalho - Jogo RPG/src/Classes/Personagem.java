@@ -9,7 +9,7 @@ public abstract class Personagem{
     private int hpMax;
     private int defesaBase;
 
-    public Personagem(String nome, int hp, int hpMax, int defesaBase){
+    public Personagem(String nome, int hp, int hpMax, int defesaBase) {
         this.nome = nome;
         this.hp = hp;
         this.hpMax = hpMax;
