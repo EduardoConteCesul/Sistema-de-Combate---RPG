@@ -1,8 +1,20 @@
-public abstract class Personagem {
+package Classes;
+
+import com.sun.management.UnixOperatingSystemMXBean;
+
+public abstract class Personagem{
+
     private String nome;
     private int hp;
     private int hpMax;
     private int defesaBase;
+
+    public Personagem(String nome, int hp, int hpMax, int defesaBase){
+        this.nome = nome;
+        this.hp = hp;
+        this.hpMax = hpMax;
+        this.defesaBase = defesaBase;
+    }
 
     public void atacar(Personagem alvo) {
 
