@@ -16,6 +16,48 @@ public class Guerreiro extends Personagem implements Especial {
         this.gritoUsado = gritoUsado;
         this.bonusForca = bonusForca;
     }
+
     @Override
-    protected int getPoderAtaque();
+    protected int getPoderAtaque() {
+        return forca + bonusForca;
+    }
+
+    @Override
+    public int usarHabilidadeEspecial(Personagem alvo) {
+        return espadaMortal();
+    }
+
+    public int gritoDeGuerra() {
+        if (!gritoUsado ){
+            gritoUsado = true;
+            return bonusForca + 5;
+        }else {
+            return bonusForca;
+        }
+    }
+
+
+    @Override
+    public void exibirStatus() {
+        System.out.println(
+                "Nome: " + getNome() +
+                        " | HP:  " + getHp() +
+                        " | HpMax: " + getHpMax() +
+                        " | DefesaBase: " + getDefesaBase() +
+                        " | Força: " + forca +
+                        " | Stamina: " + stamina +
+                        " | Bônus força: " + bonusForca
+        );
+    }
+
+    private int espadaMortal(){
+        if (stamina > 20){
+            stamina -= 20;
+            return 2 * getPoderAtaque();
+        }else{
+            System.out.println("Guerreiro não tem stamina suficiente");
+            return 0;
+        }
+    }
+
 }

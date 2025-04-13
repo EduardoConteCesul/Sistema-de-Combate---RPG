@@ -4,5 +4,5 @@ import Classes.Personagem;
 
 public interface Especial {
 
-    public void usarHabilidadeEspecial(Personagem alvo);
+    public int usarHabilidadeEspecial(Personagem alvo);
 }
