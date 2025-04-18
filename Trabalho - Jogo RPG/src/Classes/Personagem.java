@@ -7,15 +7,15 @@ public abstract class Personagem{
     private int hpMax;
     private int defesaBase;
 
-    public Personagem(String nome, int hp, int hpMax, int defesaBase) {
+    public Personagem(String nome, int hpMax, int defesaBase) {
         this.nome = nome;
-        this.hp = hp;
+        this.hp = hpMax;
         this.hpMax = hpMax;
         this.defesaBase = defesaBase;
     }
 
     public void atacar(Personagem alvo) {
-        hp -= getPoderAtaque();
+        alvo.receberDano(getPoderAtaque());
     }
 
     public void receberDano(int quantidade){

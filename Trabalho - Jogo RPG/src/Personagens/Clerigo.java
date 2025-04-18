@@ -9,10 +9,10 @@ public class Clerigo extends Personagem implements Especial, Suporte {
     private int fe;
     private int oracoes;
 
-    public Clerigo(String nome, int hp, int hpMax, int defesaBase, int fe, int oracoes) {
-        super(nome, hp, hpMax, defesaBase);
+    public Clerigo(String nome, int hpMax, int defesaBase, int fe) {
+        super(nome, hpMax, defesaBase);
         this.fe = fe;
-        this.oracoes = oracoes;
+        this.oracoes = 5;
     }
 
     @Override

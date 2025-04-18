@@ -9,12 +9,12 @@ public class Guerreiro extends Personagem implements Especial {
     private boolean gritoUsado;
     private int bonusForca;
 
-    public Guerreiro(String nome, int hp, int hpMax, int defesaBase, int forca, int stamina, boolean gritoUsado, int bonusForca){
-        super(nome, hp, hpMax, defesaBase);
+    public Guerreiro(String nome, int hpMax, int defesaBase, int forca){
+        super(nome, hpMax, defesaBase);
         this.forca = forca;
-        this.stamina = stamina;
-        this.gritoUsado = gritoUsado;
-        this.bonusForca = bonusForca;
+        this.stamina = 100;
+        this.gritoUsado = false;
+        this.bonusForca = 5;
     }
 
     @Override
@@ -59,5 +59,4 @@ public class Guerreiro extends Personagem implements Especial {
             return 0;
         }
     }
-
 }
